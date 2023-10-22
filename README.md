@@ -13,3 +13,4 @@
 </ol>
 
 <h2>Screenshots</h2>
+<img src="./screenshots/screenshot1.png" />
