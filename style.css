@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2E4053;
+}
+
+.renderer {
+    position: absolute;
+}
+
+.css-renderer {}
+
+.webgl-renderer {}
+
+.scene-element-object {
+    color: #fff;
+    overflow: hidden;
+}
+
+.scene-button {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border: 1px solid #fff;
+    border-radius: 50%; */
+    /* padding: 5px; */
+    transition: visible 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    cursor: pointer;
+}
+
+.scene-button>span {
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    color: #000;
+    z-index: 2;
+    transition: transform 300ms ease-in-out 100ms;
+}
+
+.scene-button:hover>span {
+    transform: rotateZ(180deg) translateX(50%) translateY(40%);
+}
+
+.scene-button>svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: 15px 35px;
+}
+
+.scene-button>svg:last-child {
+    z-index: 1;
+    clip-path: polygon(50% 42%, 100% 38%, 50% 42%, 50% 42%, 0% 38%);
+}
+
+.scene-button:hover>svg:last-child {
+    opacity: 1;
+    animation: svg-clippath-anim 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000) 100ms both;
+}
+
+@keyframes svg-clippath-anim {
+    0% {
+        clip-path: polygon(50% 42%, 100% 38%, 50% 42%, 50% 42%, 0% 38%);
+    }
+
+    100% {
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+}
